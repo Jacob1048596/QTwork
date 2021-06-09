@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include<QPushButton>
+#include<dialog.h>
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
 QT_END_NAMESPACE
@@ -14,7 +15,7 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
-    QWidget w2;
+    Dialog dig;
 private:
     Ui::Widget *ui;
     void OpenWindow();

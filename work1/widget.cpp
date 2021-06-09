@@ -19,12 +19,12 @@ Widget::Widget(QWidget *parent)
     connect(btn3,&QPushButton::clicked,this,[=](){
        if(btn3->text()=="open")
        {
-           w2.show();
+           dig.show();
             btn3->setText("close");
        }
        else if(btn3->text()=="close")
        {
-           w2.close();
+           dig.close();
             btn3->setText("open");
        }
 
@@ -33,12 +33,12 @@ Widget::Widget(QWidget *parent)
 void Widget::OpenWindow()
 {
 
-    w2.show();
+    dig.show();
 }
 void Widget::CloseWindow()
 {
 
-    w2.close();
+    dig.close();
 }
 Widget::~Widget()
 {

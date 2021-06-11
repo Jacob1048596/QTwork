@@ -1,0 +1,12 @@
+add.o
+change.o
+database.o
+del.o
+main.o
+mainwindow.o
+search.o
+moc_add.o
+moc_change.o
+moc_del.o
+moc_mainwindow.o
+moc_search.o

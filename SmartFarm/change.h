@@ -15,6 +15,9 @@ public:
     explicit change(QWidget *parent = nullptr);
     ~change();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::change *ui;
 };

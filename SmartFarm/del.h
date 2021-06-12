@@ -15,6 +15,9 @@ public:
     explicit del(QWidget *parent = nullptr);
     ~del();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::del *ui;
 };

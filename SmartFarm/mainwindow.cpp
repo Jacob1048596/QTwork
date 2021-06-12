@@ -11,14 +11,10 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     qDebug()<<QSqlDatabase::drivers();
     //SqlConnect();
-
-
-
 }
 void MainWindow::SqlConnect()
 {
-     QSqlQuery query;
-      query.exec("create table student(id int primary key, name varchar(255), age int, score int);");
+
 }
 MainWindow::~MainWindow()
 {
@@ -50,14 +46,14 @@ void MainWindow::on_flushButton_clicked()
 {
     QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
     db.setHostName("127.0.0.1"); // 数据库服务器IP，我用的是本地电脑
-    db.setDatabaseName("test");// 数据库名
+    db.setDatabaseName("SmartFarm");// 数据库名
     db.setUserName("root");// 用户名
     db.setPassword("123456");// 密码
     db.setPort(3306);// 端口号
     db.open();
 
     model=new QSqlTableModel(this);
-    model->setTable("student");
+    model->setTable("animal");
     ui->tableView->setModel(model);
     model->select();
 }

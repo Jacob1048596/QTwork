@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
@@ -25,9 +26,9 @@ QT_BEGIN_NAMESPACE
 class Ui_search
 {
 public:
-    QVBoxLayout *verticalLayout_4;
-    QTableView *tableView;
+    QGridLayout *gridLayout;
     QLabel *label;
+    QTableView *tableView;
     QWidget *widget_5;
     QHBoxLayout *horizontalLayout_2;
     QWidget *widget_3;
@@ -55,18 +56,18 @@ public:
     {
         if (search->objectName().isEmpty())
             search->setObjectName(QString::fromUtf8("search"));
-        search->resize(721, 632);
-        verticalLayout_4 = new QVBoxLayout(search);
-        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
-        tableView = new QTableView(search);
-        tableView->setObjectName(QString::fromUtf8("tableView"));
-
-        verticalLayout_4->addWidget(tableView);
-
+        search->resize(508, 607);
+        gridLayout = new QGridLayout(search);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         label = new QLabel(search);
         label->setObjectName(QString::fromUtf8("label"));
 
-        verticalLayout_4->addWidget(label);
+        gridLayout->addWidget(label, 1, 0, 1, 1);
+
+        tableView = new QTableView(search);
+        tableView->setObjectName(QString::fromUtf8("tableView"));
+
+        gridLayout->addWidget(tableView, 0, 0, 1, 1);
 
         widget_5 = new QWidget(search);
         widget_5->setObjectName(QString::fromUtf8("widget_5"));
@@ -161,7 +162,7 @@ public:
         horizontalLayout_2->addWidget(widget_4);
 
 
-        verticalLayout_4->addWidget(widget_5);
+        gridLayout->addWidget(widget_5, 2, 0, 1, 1);
 
 
         retranslateUi(search);
@@ -171,7 +172,7 @@ public:
 
     void retranslateUi(QWidget *search)
     {
-        search->setWindowTitle(QCoreApplication::translate("search", "Form", nullptr));
+        search->setWindowTitle(QCoreApplication::translate("search", "\346\237\245\346\211\276\351\241\265\351\235\242", nullptr));
         label->setText(QCoreApplication::translate("search", "\346\240\271\346\215\256\344\270\215\345\220\214\347\247\215\347\261\273\350\277\233\350\241\214\346\237\245\346\211\276", nullptr));
         searchByid->setText(QCoreApplication::translate("search", "id", nullptr));
         searchBygenus->setText(QCoreApplication::translate("search", "\347\247\215\347\261\273", nullptr));

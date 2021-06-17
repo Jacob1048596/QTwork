@@ -114,7 +114,7 @@ public:
 
     void retranslateUi(QWidget *add)
     {
-        add->setWindowTitle(QCoreApplication::translate("add", "Form", nullptr));
+        add->setWindowTitle(QCoreApplication::translate("add", "\346\226\260\345\242\236\351\241\265\351\235\242", nullptr));
         addButton->setText(QCoreApplication::translate("add", "\346\267\273\345\212\240", nullptr));
         label->setText(QCoreApplication::translate("add", "\347\261\273\345\210\253", nullptr));
         label_2->setText(QCoreApplication::translate("add", "\345\271\264\351\276\204", nullptr));

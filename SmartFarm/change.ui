@@ -11,13 +11,13 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>更改界面</string>
   </property>
   <widget class="QWidget" name="widget_4" native="true">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>110</y>
+     <x>60</x>
+     <y>160</y>
      <width>393</width>
      <height>183</height>
     </rect>
@@ -109,8 +109,8 @@
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>80</y>
+     <x>110</x>
+     <y>100</y>
      <width>135</width>
      <height>16</height>
     </rect>

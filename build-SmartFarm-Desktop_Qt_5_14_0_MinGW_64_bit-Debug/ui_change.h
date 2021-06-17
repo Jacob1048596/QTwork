@@ -51,7 +51,7 @@ public:
         change->resize(576, 494);
         widget_4 = new QWidget(change);
         widget_4->setObjectName(QString::fromUtf8("widget_4"));
-        widget_4->setGeometry(QRect(10, 110, 393, 183));
+        widget_4->setGeometry(QRect(60, 160, 393, 183));
         horizontalLayout_2 = new QHBoxLayout(widget_4);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         widget_3 = new QWidget(widget_4);
@@ -137,7 +137,7 @@ public:
 
         label_6 = new QLabel(change);
         label_6->setObjectName(QString::fromUtf8("label_6"));
-        label_6->setGeometry(QRect(40, 80, 135, 16));
+        label_6->setGeometry(QRect(110, 100, 135, 16));
 
         retranslateUi(change);
 
@@ -146,7 +146,7 @@ public:
 
     void retranslateUi(QWidget *change)
     {
-        change->setWindowTitle(QCoreApplication::translate("change", "Form", nullptr));
+        change->setWindowTitle(QCoreApplication::translate("change", "\346\233\264\346\224\271\347\225\214\351\235\242", nullptr));
         label_5->setText(QCoreApplication::translate("change", "\350\276\223\345\205\245id", nullptr));
         label->setText(QCoreApplication::translate("change", "\347\247\215 \347\261\273", nullptr));
         label_2->setText(QCoreApplication::translate("change", "\345\271\264 \351\276\204", nullptr));

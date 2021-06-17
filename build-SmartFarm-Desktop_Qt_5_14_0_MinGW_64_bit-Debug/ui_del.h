@@ -47,7 +47,7 @@ public:
 
     void retranslateUi(QWidget *del)
     {
-        del->setWindowTitle(QCoreApplication::translate("del", "Form", nullptr));
+        del->setWindowTitle(QCoreApplication::translate("del", "\345\210\240\351\231\244\347\225\214\351\235\242", nullptr));
         pushButton->setText(QCoreApplication::translate("del", "\345\210\240\351\231\244", nullptr));
         label->setText(QCoreApplication::translate("del", "\346\240\271\346\215\256id\345\210\240\351\231\244\344\277\241\346\201\257", nullptr));
     } // retranslateUi
